@@ -1,0 +1,50 @@
+// styles/scss/bookshelf.scss
+.the-bookshelf {
+  width: 100vw;
+  height: 100vh;
+  background-color: #e3e3e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .bookshelf-wrap {
+    > .bookshelf {
+      box-shadow: inset 0 -20px #7b5019;
+      padding-bottom: 20px;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    [class*="book"] {
+      font-size: 32px;
+      letter-spacing: -0.045em;
+      display: flex;
+      transition: 0.2s;
+
+      &:hover {
+        transform: none;
+      }
+    }
+
+    .book-info {
+      text-transform: uppercase;
+      writing-mode: sideways-rl;
+      display: flex;
+      justify-content: space-around;
+      flex: 1;
+      align-items: center;
+      font-weight: bold;
+      padding: 16px 0;
+
+      .title {
+        font-weight: inherit;
+        font-size: 20px;
+      }
+
+      .author {
+        font-weight: inherit;
+        font-size: 15px;
+      }
+    }
+  }
+}
